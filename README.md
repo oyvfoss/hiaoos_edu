@@ -18,7 +18,7 @@
 ### `kval`
 
 - ~~Test the time drift function..~~
-- Remove `PROCESSING` fields?
+- ~~Remove `PROCESSING` fields?~~
 - Integrate `seabirdscientific`?
 - Test and push new version
 - Check robustness 
