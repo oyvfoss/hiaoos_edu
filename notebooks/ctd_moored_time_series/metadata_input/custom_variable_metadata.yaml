@@ -1,0 +1,7 @@
+variables:
+  TEMP1:
+    processing_level: Manually reviewed
+  PSAL1: 
+    processing_level: Manually reviewed, outliers removed
+  CNDC1:
+    processing_level: Raw instrument data
