@@ -30,7 +30,5 @@ env/
 Thumbs.db
 
 # Data & outputs (uncomment / adjust as needed)
-# *.csv
-# *.parquet
-# data/
-# outputs/
+*.nc
+*.zip
