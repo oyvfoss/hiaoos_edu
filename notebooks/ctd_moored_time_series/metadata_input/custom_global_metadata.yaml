@@ -5,26 +5,27 @@ global_attributes:
   # ----------------------
 
   # TRY TO ALWAYS INCLUDE THESE:
-  title: TBW # Descriptive title for the dataset. E.g.:
+  title: Temperature, salinity and pressure near 49 m depth at the AT200 mooring northeast of Svalbard # Descriptive title for the dataset. E.g.:
   # - Seawater chemistry and tracers from the Fram Strait Arctic Outflow Observatory collected in August-September 2012
-  summary: TBW # "Dataset abstract". In some cases, but not necessarily, identical to the `Summary` field at the NPDC landing page.
-  id: TBW # Dataset ID with version information. Good practice for this to be identical to the .nc file prefix. 
+  summary: Data f # "Dataset abstract". In some cases, but not necessarily, identical to the `Summary` field at the NPDC landing page.
+  id: atwain_at200_2021_2022_temp_sal_pres_49m_ # Dataset ID with version information. Good practice for this to be identical to the .nc file prefix. 
   #         E.g.:
   #            - Fram_Strait_seawater_chemistry_tracers_2012_v1
-  product_version: TBW # Typically "v1"
-  data_set_progress: TBW # Typically: "complete"
-  doi: TBW # DOI of the dataset (see the NPDC dataset landing page)
-  cruise_name: TBW # E.g. FS2012, KPH2021712..
-  processing_level: TBW # Human-readable description of the processing level. 
+  product_version: v1 # Typically "v1"
+  data_set_progress: test dataset # Typically: "complete"
+  doi: N/A # DOI of the dataset (see the NPDC dataset landing page)
+  cruise_name: Cruise A, Cruise B # E.g. FS2012, KPH2021712..
+  processing_level: Data has been manually reviewed and undergone basic post-processing 
+                        # Human-readable description of the processing level. 
                         # Can be assigned globally or for each variable. E.g.:
                         # - Data manually reviewed, and some variables assigned quality flags.
                         # - Raw data from instrument using pre-cruise calibration coefficients.
-  QC_indicator: TBW # A quick description of the data quality - hopefully 'good data'. 
+  QC_indicator:     # A quick description of the data quality - hopefully 'good data'. 
                     # Can be assigned globally or for each variable. E.g.:
                     # 'good data', 'probably good data', 'bad data',
                     # 'potentially correctable bad data', 'uncalibrated data', 
                     # 'nominal value', 'unknown'
-  platform_name: TBW  # Name of ship, e.g R/V Lance, R/V Kronprins Haakon
+  platform_name: AT200 mooring  # Name of ship, e.g R/V Lance, R/V Kronprins Haakon
   area: TBW # Write freely - e.g. Arctic Ocean, Southern Ocean--
   location: TBW # Use controlled dictionary (see https://gcmd.earthdata.nasa.gov/KeywordViewer/)
                 # E.g. OCEAN>ARCTIC OCEAN, OCEAN>SOUTHERN OCEAN>WEDDELL SEA
@@ -33,32 +34,29 @@ global_attributes:
   acknowledgment: TBW # Anyone that shoudl be acknowledged. At minimum, just write "Norwegian Polar Institute".
   comment: TBW # Anything that can be useful information for a user. 
                # Note that this field is required - aim to put *something* here.
+  references: TBW # Put any references and papers cited in the summary here. 
 
-  # ----------------------
-  # NECESSARY BUT TYPICALLY AUTO-GENERATED
-  # ----------------------
-  date_created:
-  time_coverage_start:
-  time_coverage_end:
-  time_coverage_duration:
-  time_coverage_resolution:
-  geospatial_lat_min:
-  geospatial_lat_max:
-  geospatial_lon_min:
-  geospatial_lon_max: 
-  geospatial_vertical_min:
-  geospatial_vertical_max:
-  geospatial_vertical_positive:
-  geospatial_vertical_units:
-  geospatial_bounds_crs:
-  geospatial_bounds_vertical_crs:
+  ## DETAILS ABOUT WHO CREATED THE DATASET:
+  institution: TBW # E.g. University of X, Institute of Y..
+  data_assembly_center: TBW # : # E.g. NO/NPI
+  creator_name: TBW # Creator name or institution
+  creator_type: TBW # Person, institution
+  creator_email: TBW # 
+  creator_institution: TBW
+  creator_url: TBW
+  publisher_name: TBW
+  publisher_url: TBW
+  publisher_email: TBW
+  publisher_type: TBW
+  publisher_institution: TBW
+  naming_authority: TBW
+  license: CC-BY 4.0
 
   # ----------------------
   # OPTIONAL (not included if left blank)
   # ----------------------
-  references: # Put any references and papers cited in the summary here. 
   metadata_link: # Link to the NPDC dataset page or the cruise report.
-  related_usl: # Useful to link e.g. a project webpage
+  related_url: # Useful to link e.g. a project webpage
   program: # E.g. NPI Arctic Ocean Programme
   history: # Short description - what has been done and where. E.g.: 
   #history: |
@@ -69,37 +67,3 @@ global_attributes:
   contributor_name: # Names and institutions, e.g. Granskog, M. (NPI), & Stedmon, C. (DTU)
   date_metadata_modified: # Set if you modify the published file (YYYY-MM-DD)
   date_modified: # Set if you modify the published file (YYYY-MM-DD) 
-  platform_call_sign: # For KPH: 3YYQ
-  platform_imo_code: # For KPH: 9739587
-
-  # ----------------------
-  # TYPICALLY DON'T CHANGE THESE FOR CTDS
-  # ----------------------
-  Conventions: ACDD-1.3, CF-1.10
-  source: Shipboard profiles - SBE911+ CTD
-  instrument: |
-    In Situ/Laboratory Instruments>Profilers/Sounders>CTD,
-  featureType: profile
-  sensor_mount: mounted_on_shipborne_profiler
-  data_set_language: eng
-  iso_topic_category: oceans
-  platform: Water-based Platforms>Vessels>Surface>Ships
-  standard_name_vocabulary: CF Standard Name Table v92
-  keywords_vocabulary: NASA/GCMD Science Keywords 22.3
-  platform_vocabulary: GCMD Platform Keywords Version 22.3
-  location_vocabulary: GCMD Platform Keywords Version 22.3
-  instrument_vocabulary: NASA/GCMD Science Keywords 22.3
-  institution: Norwegian Polar Institute
-  license: CC-BY 4.0
-  data_assembly_center: NO/NPI
-  creator_name: Norwegian Polar Institute (NPI)
-  creator_email: post@npolar.no
-  creator_type: institution
-  creator_institution: Norwegian Polar Institute (NPI)
-  creator_url: www.npolar.no
-  publisher_name: Norwegian Polar Institute (NPI)
-  publisher_url: www.npolar.no
-  publisher_email: post@npolar.no
-  publisher_type: institution
-  publisher_institution: Norwegian Polar Institute (NPI)
-  naming_authority: data.npolar.no

@@ -1,7 +1,14 @@
 variables:
-  TEMP1:
-    processing_level: Manually reviewed
-  PSAL1: 
-    processing_level: Manually reviewed, outliers removed
-  CNDC1:
-    processing_level: Raw instrument data
+  TEMP:
+    note: Some useful note about the TEMP data
+    QC_indicator: good data
+  PSAL: 
+    note: Some useful note about the PSAL data
+    QC_indicator: good data
+  CNDC:
+    note: Some useful note about the CNDC data
+    QC_indicator: good data
+  PRES:
+    note: Some useful note about the pressure data
+    QC_indicator: good data
+
